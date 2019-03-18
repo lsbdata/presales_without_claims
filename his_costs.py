@@ -3,7 +3,6 @@ import numpy as np
 
 cost_data = pd.read_csv('non_claims_presales/input/his_costs.csv')
 prof_rate = pd.read_csv('non_claims_presales/input/medicare_prof_rate.csv')
-incidence_table = pd.read_csv('non_claims_presales/output/his_estimates.csv')
 
 def build_cost_variables(df):
 
@@ -55,11 +54,12 @@ d = pd.concat(dfs)
 d_filled = d.fillna(d.mean())
 d_filled.to_csv('/Users/lauren/non_claims_presales/output/his_cost_estimates.csv')
 
-d_filled.columns = ['_'.join(col).strip() for col in d_filled.columns.values]
-d_filled['state_abbrev'] = d_filled.index
-#need to merge with incidence_table
-merged_costs = pd.merge(incidence_table, d_filled, how='left', left_on='State', right_on='state_abbrev')
-merged_costs_filled = merged_costs.fillna(merged_costs.mean())
+
+
+
+
+
+'''merged_costs_filled = merged_costs.fillna(merged_costs.mean())
 
 merged_costs_filled.set_index('State', inplace=True)
 
@@ -199,4 +199,4 @@ cervical_spinal_fusion = cervical_spinal_fusion[['male_less_45_cervical_spinal_f
 df_list = [cervical_spinal_fusion, coronary_bypass, spinal_neuro, spinal_fusion_except_cervical, spinal_fusion_curve_malig_infect, major_joint_shoulder_elbow, shoulder_elbow_forearm, other_musc, lower_extremity_humer, knee_other, upper_joint_limb_reattach, hip_knee_revise, hip_knee_replace, hip_femur_not_joint, hand_wrist, bilateral_major_lower_extremity, bariatric, backneck, antpostfusion]
 cost_df = pd.concat(df_list, axis=1)
 
-cost_df.to_csv('/Users/lauren/non_claims_presales/output/amgen_total_cost_estimates.csv')
+cost_df.to_csv('/Users/lauren/non_claims_presales/output/' + prospect + 'total_cost_estimates.csv')

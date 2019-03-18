@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime, timedelta, date
 
 data = pd.read_csv('non_claims_presales/input/amgen_census_cleaned.csv')
-medicare_data = pd.read_csv('non_claims_presales/input/medicare_table.csv')
+#medicare_data = pd.read_csv('non_claims_presales/input/medicare_table.csv')
 
 col = 'date_of_birth'
 data[col] = pd.to_datetime(data[col])
@@ -50,7 +50,7 @@ emp_dist['percent_45_plus'] = emp_dist['45 and older']/emp_dist['Estimated Adult
 emp_data = emp_dist[['State', 'total_male', 'total_female', 'total_male_less_45', 'total_female_less_45', 'percent_45_plus', 'total_male_plus_45', 'total_female_plus_45', 'Estimated Adult Lives']]
 emp_data.to_csv('/Users/lauren/non_claims_presales/output/employee_demographics.csv')
 
-matched = pd.merge(emp_data, medicare_data, how='left', left_on='State', right_on='state_abbrev')
+'''matched = pd.merge(emp_data, medicare_data, how='left', left_on='State', right_on='state_abbrev')
 
 matched['bariatric_estimate'] = matched['Estimated Adult Lives'] * (matched['bariatric_rate']*20)
 matched['female_back_estimate'] = matched['total_female'] * matched['back_female_rate']
@@ -64,4 +64,4 @@ matched['male_knee_estimate'] = matched['total_male'] * matched['knee_male_rate'
 
 result = matched[['State','bariatric_estimate', 'female_back_estimate', 'male_back_estimate', 'female_coronary_estimate', 'male_coronary_estimate', 'female_hip_estimate', 'male_hip_estimate', 'female_knee_estimate', 'male_knee_estimate']]
 
-result.to_csv('/Users/lauren/non_claims_presales/output/medicare_estimates.csv')
+result.to_csv('/Users/lauren/non_claims_presales/output/medicare_estimates.csv')'''

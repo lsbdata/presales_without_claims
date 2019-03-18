@@ -1,0 +1,22 @@
+﻿DRG,DRG_group,description,DRG_category,carrum_price,carrum_price_mean,carrum_price_min
+234,234-236,Coronary bypass w cardiac cath w/o MCC,Coronary bypass,54000,49200,44400
+236,234-236,Coronary bypass w/o cardiac cath w/o MCC,Coronary bypass,44400,49200,44400
+453,453-455,Combined anterior/posterior spinal fusion w MCC,Combined anterior/posterior fusion,131400,96600,67200
+454,453-455,Combined anterior/posterior spinal fusion w CC,Combined anterior/posterior fusion,91200,96600,67200
+455,453-455,Combined anterior/posterior spinal fusion w/o CC/MCC,Combined anterior/posterior fusion,67200,96600,67200
+459,459-460,Spinal fusion except cervical w MCC,Spinal fusion (except cervical),76800,60000,43200
+460,459-460,Spinal fusion except cervical w/o MCC,Spinal fusion (except cervical),43200,60000,43200
+469,469-470,Major joint replacement or reattachment of lower extremity w MCC,Hip/Knee replacement,31200,28200,25200
+470,469-470,Major joint replacement or reattachment of lower extremity w/o MCC,Hip/Knee replacement,25200,28200,25200
+471,471-473,Cervical spinal fusion w MCC,Cervical fusion,57600,39800,27600
+472,471-473,Cervical spinal fusion w CC,Cervical fusion,34200,39800,27600
+473,471-473,Cervical spinal fusion w/o CC/MCC,Cervical fusion,27600,39800,27600
+515,515-517,OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W/ MCC,Other musculoskeletal,47280,30360,19560
+516,515-517,OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W/ CC,Other musculoskeletal,24240,30360,19560
+517,515-517,OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W/O CC/MCC,Other musculoskeletal,19560,30360,19560
+518,518-520,BACK AND NECK PROCEDURES EXCEPT SPINAL FUSION WITH MCC OR DISC DEVICE OR NEUROSTIMULATOR,Back or neck (except fusion),40800,32000,20400
+519,518-520,BACK AND NECK PROCEDURES EXCEPT SPINAL FUSION WITH CC,Back or neck (except fusion),34800,32000,20400
+520,518-520,BACK AND NECK PROCEDURES EXCEPT SPINAL FUSION WITHOUT CC/MCC,Back or neck (except fusion),20400,32000,20400
+619,619-621,O.R. procedures for obesity w MCC,Bariatrics,39330,26530,19530
+620,619-621,O.R. procedures for obesity w CC,Bariatrics,20730,26530,19530
+621,619-621,O.R. procedures for obesity w/o CC/MCC,Bariatrics,19530,26530,19530
